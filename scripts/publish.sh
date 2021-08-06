@@ -10,15 +10,14 @@ rm -rf ../bin/Release/net5.0/win-x64/publish
 #dotnet test
 
 #publish app
-dotnet publish ../StructureWatch.csproj -r win-x64 -c Release  /p:PublishSingleFile=true /p:PublishTrimmed=true /p:Version=$1 --version-suffix $1
+dotnet publish ../War.csproj -r win-x64 -c Release  /p:PublishSingleFile=true /p:PublishTrimmed=true /p:Version=$1 --version-suffix $1
 
 if [ $? -eq 0 ]; then
 
     #zip for transfer
     tar -C ../bin/Release/net5.0/win-x64/publish -zcf  War-$1.tar.gz .
     #transfer
-   # scp StructureWatch-$1.tar.gz ubuntu@wilhe1m:/home/ubuntu
-    #tar -xzvf -C /var/www/StructureWatch
+  
 
 else 
     echo "build failed ... :("
