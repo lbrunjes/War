@@ -4,7 +4,7 @@
    \\\ //^\\ ///   //^\\   |||\\\
     \\V// \\V//   ///=\\\  ||| \\\
 
-```
+````
 Plays the card game so you don't have to.
 
 If there is anything we can learn from being developers it is that the primary reason for writing to code it to automate repetitive tasks we don't particularly want to do over and over again. As someone currently on vacation, the most obvious target for automation is the card game war. 
